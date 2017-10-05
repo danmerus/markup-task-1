@@ -1,39 +1,8 @@
 <!DOCTYPE HTML>
 <html lang="ru">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
     <title>Блог компании Яндекс.</title>
-    <style type="text/css">
-        ul {
-            margin: 0;
-        }
-        ul.defis {
-            list-style: none;
-            margin-left: 0;
-            padding-left: 1.2em;
-            text-indent: -1.2em;
-        }
-
-        li.defis:before {
-            content: "–";
-            display: block;
-            float: left;
-            width: 1.2em;
-        }
-        ul.star {
-            list-style: none;
-            margin-left: 0;
-            padding-left: 1.2em;
-            text-indent: -1.2em;
-        }
-
-        li.star:before {
-            content: "*";
-            display: block;
-            float: left;
-            width: 1.2em;
-        }
-    </style>
 </head>
 <body>
 <h3>ЯНДЕКС.ПОЧТА: КАК МЫ ИЗМЕРЯЕМ СКОРОСТЬ ЗАГРУЗКИ И УЛУЧШАЕМ ЕЁ</h3>
@@ -153,7 +122,7 @@
 <p>
     Для окончательного выбора библиотеки нам нужно сравнить:
 </p>
-<table border="1">
+<table>
     <tr><th>Библиотека </th><th>IE 9</th><th>Opera 12</th></tr>
     <tr><td>vcdiff</td><td>8</td><td>5</td></tr>
     <tr><td>google diff</td><td>1363 </td><td>76</td></tr>
@@ -194,7 +163,7 @@
     дано:<dfn>ε, x<sub>0</sub></dfn><br>
     инициализировать <dfn>H<sub>0</sub></dfn><br>
     <dfn>k = 0</dfn><br>
-    <b>while</b> || ∇<dfn>f<sub>k</sub> || > ε</dfn><br>
+    while || ∇<dfn>f<sub>k</sub> || > ε</dfn><br>
     &emsp;найти направление <dfn>p<sub>k</sub> = -C<sub>k</sub>∇ f<sub>k</sub></dfn><br>
     &emsp;вычислить <dfn>x<sub>k+1</sub> = x<sub>k</sub> + a<sub>k</sub>p<sub>k</sub>, a<sub>k</sub>
     </dfn> удовлетворяет условиям Вольфе<br>
@@ -202,7 +171,7 @@
     <dfn>y<sub>k</sub> = ∇ f<sub>k+1</sub> - ∇ f<sub>k</sub></dfn><br>
     &emsp;вычислить <dfn>С<sub>k+1</sub></dfn><br>
     &emsp;<dfn>k = k + 1</dfn><br>
-    <b>end</b>
+    end
 </p>
 <p>
     Почему именно алгоритм Флетчера, а не другие популярные алгоритмы вроде:<br>
@@ -221,7 +190,7 @@
 <p>
     Фактически мы экономим 80-90% трафика. Размер загружаемой статитки в байтах:
 </p>
-<table border="1">
+<table>
     <tr><th>Релиз</th><th>С патчем</th><th>Без патча</th></tr>
     <tr><td>7.7.20</td><td>397</td><td>174 549</td></tr>
     <tr><td>7.7.21</td><td>383</td><td>53 995</td></tr>
